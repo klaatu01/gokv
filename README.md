@@ -1,6 +1,6 @@
 # Gokv - A Light-Weight Key-Value store written in Go
 
-Gokv is used to store, retrieve and remove key-value pairs from json files.
+Gokv is used to store, retrieve and remove key-value pairs into a JSON file.
 
 ## Getting Started
 
