@@ -12,9 +12,9 @@ var jsonpath string
 var keyvals []KeyVal
 
 type KeyVal struct {
-	Key       string    `json:key`
-	Value     string    `json:val`
-	Timestamp time.Time `json:time`
+	Key       string    `json:"Key"`
+	Value     string    `json:"Value"`
+	Timestamp time.Time `json:"Time"`
 }
 
 func SetPath(path string) {
