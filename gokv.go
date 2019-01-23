@@ -6,6 +6,7 @@ import (
 	"io/ioutil"
 	"os"
 	"time"
+	"log"
 )
 
 var jsonpath string
@@ -25,6 +26,7 @@ func loadKeyVals(path string) {
 	if _, err := os.Stat(path); os.IsNotExist(err) {
 		var file, err = os.Create(path)
 		if err != nil {
+			log.Fatal(err)
 			os.Exit(0)
 		}
 		_, err = file.WriteString("[]\n")
