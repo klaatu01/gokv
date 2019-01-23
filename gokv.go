@@ -79,7 +79,7 @@ func SaveAs(path string) {
 	}
 }
 
-func commit(path string) {
+func Commit(path string) {
 	data, err := json.Marshal(keyvals)
 	err = ioutil.WriteFile(path, data, os.FileMode(0777))
 	if err != nil {
