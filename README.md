@@ -47,9 +47,13 @@ func main(){
 ```
 Usage
 `go build lwkv.go`
+
 `./lwkv -k=foo -v=bar`
+
 `./lwkv -k=foo`
+
 bar
+
 `./lwkv -r -k=foo`
 
 
